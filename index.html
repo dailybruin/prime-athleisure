@@ -30,11 +30,7 @@
 					</div>
 					<span class="loading-small"></span>
 				</div>
-				<div class="project-descr-full">
-
-					<div class="project-descr-full-wrapper">
-					</div>
-				</div><!-- project-descr-full -->
+				
 			</div><!-- full-view -->
 		</script>
 	</head>
@@ -192,6 +188,7 @@
 									isAnimated		: true
 								});
 							},
+
 							// events
 							initEventsHandler		= function() {
 								// switch to fullview when we click the "View Project" link
@@ -209,12 +206,13 @@
 										// preload the fullview image and then start the animation (showArticle)
 										var $intro		= $article.find('div.intro');
 										$intro.addClass('intro-loading');
+										
 										$('<img/>').load(function() {
 											$intro.removeClass('intro-loading');
 											showArticle( $article, true );
 											animrun	= false;
 										}).attr('src', $article.data('bgimage'));
-										
+
 										return false;
 									});
 								});
@@ -279,6 +277,8 @@
 							// the difference is that we don't animate the values (just set the css values), and the clone is not removed, since we
 							// will use it for the animation (back to the thumb position)
 							showArticle				= function( $article, anim ) {
+
+								
 								// clone the article
 								var	$clone	= $article.clone().css({
 									left	: $article.offset().left + 'px',
@@ -324,12 +324,6 @@
 										start	: $article.find('div.thumbs-wrapper').data('currentImage')
 									});
 									
-									//jscrollpane
-									$fullview_content.find('div.project-descr-full-wrapper').jScrollPane('destroy').jScrollPane({
-										verticalDragMinHeight: 40,
-										verticalDragMaxHeight: 40
-									});
-									
 									// center bg image
 									centerBgImage( $fullview.find('img.bg-img') );
 									
@@ -349,6 +343,10 @@
 								
 								// fade in overlay
 								( anim ) ? $overlay.show().fadeTo( animspeed, 0.7, animeasing ) : $overlay.show().css( 'opacity', 0.7 );
+
+
+							
+
 							},
 							// close the fullview
 							hideArticle				= function( $article ) {
@@ -426,6 +424,8 @@
 									// center the bg image
 									centerBgImage( $bgImage );
 									$fullviewImage.remove(); 
+
+
 									
 									$fullviewTitle.html( articleFullviewData.title );
 									
@@ -433,10 +433,6 @@
 									
 									$fullviewDescriptionWrapper.jScrollPane('destroy');
 									$fullviewDescription.html( articleFullviewData.description );
-									$fullviewDescriptionWrapper.jScrollPane('destroy').jScrollPane({
-										verticalDragMinHeight: 40,
-										verticalDragMaxHeight: 40
-									});
 									
 									$fullviewThumbsWrapper.remove();
 									$fullviewProjectDescrFull.prepend( $newFullviewThumbsWrapper );	
@@ -455,6 +451,25 @@
 									height	: dim.height + 'px',
 									left	: dim.left + 'px',
 									top		: dim.top + 'px'
+								});
+
+								var currentTop = parseInt($img.css('top'), 10);
+
+								$(window).bind('mousemove', function(event) {
+
+								    var posY = event.clientY;
+								    var windowH = $(window).height();
+
+								    var midY = windowH / 2; 
+								    
+								    var extraY = ($img.height() - windowH);
+
+								    var perc = (Math.abs(posY) - midY ) / midY; 
+								    var delta = perc * (extraY / 2);
+
+
+								    $img.css('top', currentTop - delta + 'px');
+
 								});
 							},
 							//get dimentions of the image,
