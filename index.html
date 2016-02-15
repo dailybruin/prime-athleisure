@@ -279,6 +279,43 @@
 										
 									$fullview.find('div.project-descr-full-wrapper').jScrollPane('reinitialise');
 								});
+
+
+							    $(document).keydown(function(e) {
+								    if(e.which == 27) {
+								    	console.log('escape pressed');
+								        hideArticle( $articles.eq( current ) ); 
+								    }
+								    else if (e.which == 39) {
+								    	if( animrun ) return false;
+								        animrun	= true;
+								        
+								        // circular navigation
+								        if( current === totalArticles - 1 )
+								        	current = 0
+								        else
+								        	++current;
+								        // update the fullview current articles number	
+								        $fullview.find('span.full-nav-current').html( current + 1 );
+								        
+								        showFullviewArticle();
+								    }
+								    else if (e.which == 37) {
+								    	if( animrun ) return false;
+								    	animrun	= true;
+								    	
+								    	// circular navigation
+								    	if( current === 0 )
+								    		current = totalArticles - 1
+								    	else	
+								    		--current;
+								    	// update the fullview current articles number	
+								    	$fullview.find('span.full-nav-current').html( current + 1 );
+								    	
+								    	showFullviewArticle();
+								    }
+							    });
+
 							},
 							// the clicked article will be cloned;
 							// the clone will be positioned on top of the cloned article;
