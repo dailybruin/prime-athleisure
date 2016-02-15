@@ -10,7 +10,11 @@
 		<meta name="author" content="Codrops" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+
+
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css' />
 		<!-- Fullscreen jQuery template -->
@@ -36,22 +40,22 @@
 	</head>
 	<body>
 		<div style="height: 100vh; width: 100vw; background-color: white;"></div>
-		<article>
-			The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.
+		<article class="article">
+			<p>The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.</p>
 
-			But the athleisure revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.
+			<p>But the athleisure revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</p>
 
-			Fashion brands have been quick to jump on the trend as we see activewear collections, filled with sweatpants, hoodies and leggings, become a mainstay in clothing lines released by European fashion giants H&M and Zara.
+			<p>Fashion brands have been quick to jump on the trend as we see activewear collections, filled with sweatpants, hoodies and leggings, become a mainstay in clothing lines released by European fashion giants H&M and Zara.</p>
 
-			Designer labels have also taken the plunge into this trend, with designer Alexander Wang professing his love of activewear to The New York Times about a year ago.
+			<p>Designer labels have also taken the plunge into this trend, with designer Alexander Wang professing his love of activewear to The New York Times about a year ago.</p>
 
-			“I live in gym clothes,” Wang said. “When you go out on the street, it’s the uniform now.”
+			<p>“I live in gym clothes,” Wang said. “When you go out on the street, it’s the uniform now.”</p>
 
-			The athleisure movement has also managed to effect change in the reverse direction, with sporting goods powerhouses like Nike and Adidas reimagining their classic sportswear designs into fashion must-haves through collaborations such as NikeLab between Nike and Japanese label Sacai, and Adidas' collaboration with Moschino's Creative Director Jeremy Scott as well as celebrities Kanye West and Rita Ora.
+			<p>The athleisure movement has also managed to effect change in the reverse direction, with sporting goods powerhouses like Nike and Adidas reimagining their classic sportswear designs into fashion must-haves through collaborations such as NikeLab between Nike and Japanese label Sacai, and Adidas' collaboration with Moschino's Creative Director Jeremy Scott as well as celebrities Kanye West and Rita Ora.</p>
 
-			And consumers are loving it. Jeans – the once-classic casual outfit staple – saw a decline to $16 billion in domestic sales in the 2013-2014 fiscal year, while the activewear industry continues to explode with revenue, bringing in double that number at $33.6 billion that same year. Based on these figures alone, it’s a no-brainer why many within the apparel industry are jumping on the athleisure bandwagon.
+			<p>And consumers are loving it. Jeans – the once-classic casual outfit staple – saw a decline to $16 billion in domestic sales in the 2013-2014 fiscal year, while the activewear industry continues to explode with revenue, bringing in double that number at $33.6 billion that same year. Based on these figures alone, it’s a no-brainer why many within the apparel industry are jumping on the athleisure bandwagon.</p>
 
-			So the next time you see someone with joggers and a pair of Nike Flyknits, they might be headed to the gym to get a cardio fix. But who knows, maybe that person could just be headed to class.
+			<p>So the next time you see someone with joggers and a pair of Nike Flyknits, they might be headed to the gym to get a cardio fix. But who knows, maybe that person could just be headed to class.</p>
 		</article>
 		<div class="container" id="container" style="margin: 0 auto;">
 			<div class="item block" data-bgimage="images/1.jpg">
@@ -283,7 +287,6 @@
 
 							    $(document).keydown(function(e) {
 								    if(e.which == 27) {
-								    	console.log('escape pressed');
 								        hideArticle( $articles.eq( current ) ); 
 								    }
 								    else if (e.which == 39) {

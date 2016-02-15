@@ -1,0 +1,10 @@
+/* line 1, ../scss/main.scss */
+.article {
+  padding: 50px 25%;
+}
+/* line 3, ../scss/main.scss */
+.article p {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 2em;
+}
