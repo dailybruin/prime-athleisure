@@ -1,3 +1,17 @@
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+@mixin hoverActiveFocus($property, $value) {
+    &:hover, &:active, &:focus {
+        #{$property}: $value;
+    }
+}
+
 .article {
 	padding: 50px 25%;
 	p {
@@ -7,3 +21,46 @@
 	}
 }
 
+.thumbs-wrapper {
+	overflow: hidden;
+
+	// .thumbs {
+	// 	&:hover .thumb {
+	// 		background-size: 110%;
+	// 	}
+
+	// }
+}
+
+.thumb-overlay-wrapper {
+	position: relative;
+	width: 100%;
+	height: 150px;
+
+	@include vendorize(transform, skew(-40deg));
+
+	.thumb-overlay {
+		padding: 10px;
+
+		background-color: #4FBDB5;
+		opacity: 0.6;
+		z-index: 1;
+		position: absolute;
+
+
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		@include vendorize(transform, translateX(110%));
+		@include vendorize(transition, transform 350ms ease-in-out);
+	}
+
+	&:hover .thumb-overlay {
+		@include vendorize(transform, translateX(80%));
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
