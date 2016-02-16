@@ -82,3 +82,62 @@
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper:hover {
   cursor: pointer;
 }
+
+/* line 92, ../scss/main.scss */
+#fullview .full-view h2 {
+  width: 20px !important;
+}
+/* line 95, ../scss/main.scss */
+#fullview .full-view .full-view-exit {
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+/* line 101, ../scss/main.scss */
+#fullview .full-view .full-view-exit i {
+  color: white;
+  font-size: 3.5em;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: font-size 350ms ease-in-out;
+  -moz-transition: font-size 350ms ease-in-out;
+  -ms-transition: font-size 350ms ease-in-out;
+  -o-transition: font-size 350ms ease-in-out;
+  transition: font-size 350ms ease-in-out;
+}
+/* line 111, ../scss/main.scss */
+#fullview .full-view .full-view-exit:hover i {
+  font-size: 4em;
+}
+/* line 118, ../scss/main.scss */
+#fullview .full-view .header {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+/* line 124, ../scss/main.scss */
+#fullview .full-view .header .full-nav .full-nav-pages {
+  width: 75px;
+  text-align: center;
+}
+/* line 128, ../scss/main.scss */
+#fullview .full-view .header .full-nav .full-nav-pages .full-nav-current, #fullview .full-view .header .full-nav .full-nav-pages .full-nav-total {
+  font-size: 2em;
+}
+/* line 133, ../scss/main.scss */
+#fullview .full-view .header .full-nav .full-nav-prev i, #fullview .full-view .header .full-nav .full-nav-next i {
+  font-size: 2em;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

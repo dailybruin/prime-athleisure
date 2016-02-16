@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
@@ -21,16 +22,16 @@
 		<script id="fullviewTmpl" type="text/x-jquery-tmpl"> 
 			{{html bgimage}}
 			<div class="full-view">
-				<span class="full-view-exit">Exit full screen view</span>
+				<span class="full-view-exit"><i class="fa fa-times"></i></span>
 				<div class="header">
-					<h2 class="title">${title}</h2>
+					<!-- <h2 class="title">${title}</h2> -->
 					<div class="full-nav">
-						<span class="full-nav-prev">Previous</span>
+						<span class="full-nav-prev"><i class="fa fa-chevron-left"></i></span>
 						<span class="full-nav-pages">
-							<span class="full-nav-current">${current}</span>/
+							<span class="full-nav-current">${current}</span> of
 							<span class="full-nav-total">${total}</span>
 						</span>
-						<span class="full-nav-next">Next</span>
+						<span class="full-nav-next"><i class="fa fa-chevron-right"></i></span>
 					</div>
 					<span class="loading-small"></span>
 				</div>

@@ -204,14 +204,14 @@ p.subline{
 	background-position:bottom right;
 }
 .full-view-exit{
-	background:#222 url(../images/cross.png) no-repeat 10px 50%;
+	background: white;
 	position:absolute;
 	top:5px;
 	right:0px;
 	cursor:pointer;
-	width:50px;
-	height:46px;
-	text-indent:-9000px;
+	width:60px;
+	height:60px;
+	text-align: center;
 	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
 	-webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.2);
 	box-shadow:1px 1px 2px rgba(0,0,0,0.2);
@@ -221,9 +221,9 @@ p.subline{
 	-ms-transition: width 0.2s ease-in-out;
 	transition: width 0.2s ease-in-out;
 }
-.full-view-exit:hover{
+/*.full-view-exit:hover{
 	width:60px;
-}
+}*/
 .full-nav{
 	float:right;
 	padding-top:5px;
@@ -233,9 +233,8 @@ p.subline{
 	float:left;
 	width:22px;
 	height:40px;
-	background:transparent url(../images/nav.png) no-repeat bottom left;
+	/*background:transparent url(../images/nav.png) no-repeat bottom left;*/
 	cursor:pointer;
-	text-indent:-9000px;
 }
 .full-nav-next{
 	background-position:bottom right;
