@@ -13,9 +13,40 @@
 .thumbs-wrapper {
   overflow: hidden;
 }
-
-/* line 35, ../scss/main.scss */
-.thumb-overlay-wrapper {
+/* line 31, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb {
+  background-size: 100% !important;
+  -webkit-transition: background-size 350ms ease-in-out;
+  -moz-transition: background-size 350ms ease-in-out;
+  -ms-transition: background-size 350ms ease-in-out;
+  -o-transition: background-size 350ms ease-in-out;
+  transition: background-size 350ms ease-in-out;
+}
+/* line 32, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb .title {
+  font-size: 4em;
+  position: absolute;
+  text-align: right;
+  bottom: 0px;
+  right: 6px;
+  background: none;
+}
+/* line 44, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb:hover {
+  background-size: 110% !important;
+  background-position: center;
+}
+/* line 45, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb:hover .thumb-overlay-wrapper .thumb-overlay {
+  -webkit-transform: translateX(80%);
+  -moz-transform: translateX(80%);
+  -ms-transform: translateX(80%);
+  -o-transform: translateX(80%);
+  transform: translateX(80%);
+}
+/* line 53, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper {
+  pointer-events: none;
   position: relative;
   width: 100%;
   height: 150px;
@@ -25,8 +56,8 @@
   -o-transform: skew(-40deg);
   transform: skew(-40deg);
 }
-/* line 42, ../scss/main.scss */
-.thumb-overlay-wrapper .thumb-overlay {
+/* line 61, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper .thumb-overlay {
   padding: 10px;
   background-color: #4FBDB5;
   opacity: 0.6;
@@ -36,26 +67,18 @@
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-transform: translateX(110%);
-  -moz-transform: translateX(110%);
-  -ms-transform: translateX(110%);
-  -o-transform: translateX(110%);
-  transform: translateX(110%);
+  -webkit-transform: translateX(90%);
+  -moz-transform: translateX(90%);
+  -ms-transform: translateX(90%);
+  -o-transform: translateX(90%);
+  transform: translateX(90%);
   -webkit-transition: transform 350ms ease-in-out;
   -moz-transition: transform 350ms ease-in-out;
   -ms-transition: transform 350ms ease-in-out;
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 59, ../scss/main.scss */
-.thumb-overlay-wrapper:hover .thumb-overlay {
-  -webkit-transform: translateX(80%);
-  -moz-transform: translateX(80%);
-  -ms-transform: translateX(80%);
-  -o-transform: translateX(80%);
-  transform: translateX(80%);
-}
-/* line 63, ../scss/main.scss */
-.thumb-overlay-wrapper:hover {
+/* line 82, ../scss/main.scss */
+.thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper:hover {
   cursor: pointer;
 }
