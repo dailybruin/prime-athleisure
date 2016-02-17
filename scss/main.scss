@@ -15,9 +15,11 @@
 .article {
 	padding: 50px 25%;
 	p {
-		font-family: 'Merriweather', sans-serif; 
-		font-size: 1.6em;
-		margin-bottom: 2em;
+		font-family: 'Droid Serif', serif; 
+		font-size: 1rem;
+		line-height: 1.6;
+
+		margin-bottom: 2rem;
 	}
 }
 
@@ -29,6 +31,9 @@
 
 
 		.thumb {
+			background-repeat: no-repeat;
+			width: 260px; 
+			height: 160px; 
 			.title {
 				font-size: 4em;
 				position: absolute;
@@ -43,7 +48,7 @@
 
 			&:hover { 
 				.thumb-overlay-wrapper .thumb-overlay {
-					@include vendorize(transform, translateX(80%));
+					@include vendorize(transform, translateX(84%));
 				}
 
 				background-size: 110% !important;
@@ -54,7 +59,7 @@
 				pointer-events: none;
 				position: relative;
 				width: 100%;
-				height: 150px;
+				height: 160px;
 
 				@include vendorize(transform, skew(-40deg));
 
@@ -74,10 +79,6 @@
 					@include vendorize(transform, translateX(90%));
 					@include vendorize(transition, transform 350ms ease-in-out);
 				}
-
-				// &:hover .thumb-overlay {
-				// 	@include vendorize(transform, translateX(80%));
-				// }
 
 				&:hover {
 					cursor: pointer;
@@ -116,7 +117,7 @@
 		}
 
 		.header {
-			position: absolute;
+			position: absolute; 
 			bottom: 25px; 
 			left: 25px;
 
@@ -142,3 +143,10 @@
 		}
 	}
 }
+
+.reference {
+	.right_ab {
+		color: white;
+		font-family: 'Roboto', sans-serif;
+	}
+}	
