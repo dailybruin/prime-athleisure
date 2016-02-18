@@ -44,12 +44,10 @@
   position: relative;
   width: 500px;
   height: 250px;
-  top: 50%;
-  left: 50%;
+  top: 225px;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  transform: translateY(-50%);
-  margin-left: -250px;
   border-bottom: 10px solid #4FBDB5;
 }
 /* line 59, ../scss/main.scss */
@@ -235,8 +233,13 @@
 }
 
 @media (max-width: 1080px) {
-  /* line 222, ../scss/main.scss */
+  /* line 223, ../scss/main.scss */
   .blockquote {
     display: none;
+  }
+
+  /* line 226, ../scss/main.scss */
+  .landing-page #box {
+    width: 350px;
   }
 }
