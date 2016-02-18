@@ -23,6 +23,7 @@
 		<!-- Fullscreen jQuery template -->
 		<script id="fullviewTmpl" type="text/x-jquery-tmpl"> 
 			{{html bgimage}}
+			<map name="image-map" id="image-map"></map>
 			<div class="full-view">
 				<span class="full-view-exit"><i class="fa fa-times"></i></span>
 				<div class="header">
@@ -543,7 +544,7 @@
 							// gets the article's necessary info to build the fullview panel
 							getArticleFullviewData	= function( $article ) {
 								return {
-									bgimage			: '<img src="' + $article.data('bgimage') + '" class="bg-img"></img>',
+									bgimage			: '<img usemap="image-map" src="' + $article.data('bgimage') + '" class="bg-img"></img>',
 									title 			: $article.find('h2.title').text(),
 									thumbs			: $article.find('div.thumbs').html(),
 									subline			: $article.find('p.subline').text(),
