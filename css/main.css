@@ -1,17 +1,55 @@
-/* line 16, ../scss/main.scss */
-.landing-page h1 {
-  text-align: center;
+/* line 15, ../scss/main.scss */
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/9.jpg);
+  background-position: center;
 }
-/* line 19, ../scss/main.scss */
-.landing-page h2 {
+/* line 20, ../scss/main.scss */
+.landing-page:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #394D4E, #78B5B1);
+  opacity: .65;
+}
+/* line 30, ../scss/main.scss */
+.landing-page #box {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  transform: translateY(-50%);
+  margin-left: -250px;
+}
+/* line 41, ../scss/main.scss */
+.landing-page #box #title {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+}
+/* line 46, ../scss/main.scss */
+.landing-page #box #title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+/* line 50, ../scss/main.scss */
+.landing-page #box #title h2 {
+  font-size: 1.5rem;
+  font-family: 'Droid Serif', serif;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .article {
   padding: 50px 25%;
 }
-/* line 26, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .article p {
   font-family: 'Droid Serif', serif;
   font-size: 1rem;
@@ -19,11 +57,11 @@
   margin-bottom: 2rem;
 }
 
-/* line 35, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 .thumbs-wrapper {
   overflow: hidden;
 }
-/* line 42, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb {
   background-repeat: no-repeat;
   width: 260px;
@@ -35,7 +73,7 @@
   -o-transition: background-size 350ms ease-in-out;
   transition: background-size 350ms ease-in-out;
 }
-/* line 46, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .title {
   font-size: 4em;
   position: absolute;
@@ -44,12 +82,12 @@
   right: 6px;
   background: none;
 }
-/* line 58, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb:hover {
   background-size: 110% !important;
   background-position: center;
 }
-/* line 59, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb:hover .thumb-overlay-wrapper .thumb-overlay {
   -webkit-transform: translateX(84%);
   -moz-transform: translateX(84%);
@@ -57,7 +95,7 @@
   -o-transform: translateX(84%);
   transform: translateX(84%);
 }
-/* line 67, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper {
   pointer-events: none;
   position: relative;
@@ -69,7 +107,7 @@
   -o-transform: skew(-40deg);
   transform: skew(-40deg);
 }
-/* line 75, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper .thumb-overlay {
   padding: 10px;
   background-color: #4FBDB5;
@@ -91,23 +129,23 @@
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 92, ../scss/main.scss */
+/* line 125, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper:hover {
   cursor: pointer;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 #fullview .full-view h2 {
   width: 20px !important;
 }
-/* line 105, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 #fullview .full-view .full-view-exit {
   top: 20px;
   right: 20px;
   background-color: black;
   border-radius: 50%;
 }
-/* line 111, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 #fullview .full-view .full-view-exit i {
   color: white;
   font-size: 3.5em;
@@ -124,26 +162,26 @@
   -o-transition: font-size 350ms ease-in-out;
   transition: font-size 350ms ease-in-out;
 }
-/* line 121, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 #fullview .full-view .full-view-exit:hover i {
   font-size: 4em;
 }
-/* line 128, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 #fullview .full-view .header {
   position: absolute;
   bottom: 25px;
   left: 25px;
 }
-/* line 134, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 #fullview .full-view .header .full-nav .full-nav-pages {
   width: 75px;
   text-align: center;
 }
-/* line 138, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 #fullview .full-view .header .full-nav .full-nav-pages .full-nav-current, #fullview .full-view .header .full-nav .full-nav-pages .full-nav-total {
   font-size: 2em;
 }
-/* line 143, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 #fullview .full-view .header .full-nav .full-nav-prev i, #fullview .full-view .header .full-nav .full-nav-next i {
   font-size: 2em;
   position: relative;
@@ -155,7 +193,7 @@
   transform: translateY(-50%);
 }
 
-/* line 157, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .reference .right_ab {
   color: white;
   font-family: 'Roboto', sans-serif;
