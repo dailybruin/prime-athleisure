@@ -24,8 +24,8 @@
 		<script id="fullviewTmpl" type="text/x-jquery-tmpl">
 				{{html bgimage}}
 
-				<div id="circles1" style="position:fixed; z-index:1000; height:2000px; width:2000px">
-					<div id="sweater1" style="height:50px;width:50px;position:absolute;top: 50vh;left: 39vw;border-radius:50%;background-color: rgba(255,0,0,.45);z-index:2000">      </div>
+				<div id="circles1" style="position:fixed; z-index:1000;">
+					<div id="sweater1" style="height:50px;width:50px;position:absolute;top: 39%;left: 39%;border-radius:50%;background-color: rgba(255,0,0,.45);z-index:2000">      </div>
 				</div>
 
 
@@ -622,7 +622,12 @@
 									left	: dim.left + 'px',
 									top		: dim.top + 'px'
 								});
-								$("#circles1").css('top', dim.top + 'px');
+								$("#circles1").css({
+									width	: dim.width + 'px',
+									height	: dim.height + 'px',
+									left	: dim.left + 'px',
+									top		: dim.top + 'px'
+								});
 
 								var currentTop = parseInt($img.css('top'), 10);
 
