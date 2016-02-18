@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		
+
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
@@ -21,9 +21,16 @@
 		<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css' />
 
 		<!-- Fullscreen jQuery template -->
-		<script id="fullviewTmpl" type="text/x-jquery-tmpl"> 
-			{{html bgimage}}
-			<map name="image-map" id="image-map"></map>
+		<script id="fullviewTmpl" type="text/x-jquery-tmpl">
+				{{html bgimage}}
+
+				<div id="circles1" style="position:fixed; z-index:1000;">
+					<div id="sweater1" style="height:50px;width:50px;position:absolute;top: 39%;left: 39%;border-radius:50%;background-color: rgba(79,189,181,.45);z-index:2000">      </div>
+				</div>
+
+
+
+
 			<div class="full-view">
 				<span class="full-view-exit"><i class="fa fa-times"></i></span>
 				<div class="header">
@@ -38,7 +45,7 @@
 					</div>
 					<span class="loading-small"></span>
 				</div>
-				
+
 			</div><!-- full-view -->
 		</script>
 	</head>
@@ -56,8 +63,8 @@
 			<h3 style="font-family: 'Roboto', sans-serif; margin-bottom: 1rem;">BY <b>AUBREY YEO</b></h3>
 
 			<p>The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.</p>
-
-			<p>But the athleisure revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</p>
+            
+            <p>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</p>
 
 			<p>Fashion brands have been quick to jump on the trend as we see activewear collections, filled with sweatpants, hoodies and leggings, become a mainstay in clothing lines released by European fashion giants H&M and Zara.</p>
 
@@ -66,7 +73,15 @@
 			<p>“I live in gym clothes,” Wang said. “When you go out on the street, it’s the uniform now.”</p>
 
 			<p>The athleisure movement has also managed to effect change in the reverse direction, with sporting goods powerhouses like Nike and Adidas reimagining their classic sportswear designs into fashion must-haves through collaborations such as NikeLab between Nike and Japanese label Sacai, and Adidas' collaboration with Moschino's Creative Director Jeremy Scott as well as celebrities Kanye West and Rita Ora.</p>
-
+        <div class="blockquote" style="width: 50%; height: 220px; float: right; padding: 15px; border-left: 6px solid black; font-family: 'Oswald'; margin-left: 20px;">
+            <div>
+                <div class="quote" style="width: 10px; height: 40px;">"</div>
+                    <div style="padding: 0px 20px;">
+                        <p style="font-size: 0.8rem; margin-bottom: 0px;"><b><i>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</i></b></p>
+                    </div>
+                <div class="quote" style="float: right; width: 10px;">"</div>
+            </div>
+        </div>
 			<p>And consumers are loving it. Jeans – the once-classic casual outfit staple – saw a decline to $16 billion in domestic sales in the 2013-2014 fiscal year, while the activewear industry continues to explode with revenue, bringing in double that number at $33.6 billion that same year. Based on these figures alone, it’s a no-brainer why many within the apparel industry are jumping on the athleisure bandwagon.</p>
 
 			<p>So the next time you see someone with joggers and a pair of Nike Flyknits, they might be headed to the gym to get a cardio fix. But who knows, maybe that person could just be headed to class.</p>
@@ -74,7 +89,7 @@
 		<div class="container" id="container" style="margin: 0 auto;">
 			<div class="item block" data-bgimage="images/1.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/1.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -89,7 +104,7 @@
 			</div>
 			<div class="item block" data-bgimage="images/2.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/2.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -101,11 +116,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/3.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/3.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -117,11 +132,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/4.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/4.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -133,11 +148,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/5.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/5.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -149,11 +164,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/6.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/6.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -165,11 +180,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/7.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/7.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -181,11 +196,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/8.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/8.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -197,11 +212,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/9.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/9.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -213,11 +228,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/10.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/10.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -229,11 +244,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/11.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/11.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -245,11 +260,11 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="item block" data-bgimage="images/12.jpg">
 				<a href="#" class="more_link">
-					<div class="thumbs-wrapper"> 
+					<div class="thumbs-wrapper">
 						<div class="thumbs">
 							<div class="thumb" style="background: url('images/12.jpg');">
 								<div class="thumb-overlay-wrapper">
@@ -261,9 +276,9 @@
 						</div>
 					</div>
 				</a>
-				
+
 			</div>
-			
+
 			<div class="clr"></div>
 		</div><!-- container -->
 		<footer class="reference" style="margin-top: 50px;">
@@ -281,7 +296,7 @@
 		<script type="text/javascript" src="js/jquery.gpCarousel.js"></script>
 		<script type="text/javascript">
 			$(window).load(function(){
-				
+
 					// the main container
 				var $GPContainer	= $('#container'),
 					// the articles (the thumbs)
@@ -292,7 +307,7 @@
 					$fullview		= $('<div id="fullview" class="full-view-elements"></div>').prependTo( $('body') ),
 					// the overlay
 					$overlay		= $('<div class="overlay"></div>').prependTo( $('body') ),
-					
+
 					GridPortfolio	= (function() {
 							// current will be the index of the current article
 						var animspeed				= 500,
@@ -308,7 +323,7 @@
 							initPlugins				= function() {
 								// apply carousel functionality to the thumbs-wrapper in each article
 								// $articles.find('div.thumbs-wrapper').gpCarousel();
-								
+
 								// apply mansory to the grid items
 								$GPContainer.masonry({
 									itemSelector	: '.item',
@@ -323,10 +338,10 @@
 								// switch to fullview when we click the "View Project" link
 								$articles.each( function(i) {
 									$(this).find('a.more_link').bind('click.GridPortfolio', function(e) {
-										
+
 										if( animrun ) return false;
 										animrun			= true;
-										
+
 										var $article	= $(this).closest('div.block');
 										// update the current value
 										current	= $article.index('.block');
@@ -335,7 +350,7 @@
 										// preload the fullview image and then start the animation (showArticle)
 										var $intro		= $article.find('div.intro');
 										$intro.addClass('intro-loading');
-										
+
 										$('<img/>').load(function() {
 											$intro.removeClass('intro-loading');
 											showArticle( $article, true );
@@ -345,85 +360,85 @@
 										return false;
 									});
 								});
-								
+
 								// fullview navigation
 								$('#fullview').find('span.full-nav-next').live('click.GridPortfolio', function(e) {
 									if( animrun ) return false;
 									animrun	= true;
-									
+
 									// circular navigation
 									if( current === totalArticles - 1 )
 										current = 0
 									else
 										++current;
-									// update the fullview current articles number	
+									// update the fullview current articles number
 									$fullview.find('span.full-nav-current').html( current + 1 );
-									
+
 									showFullviewArticle();
 								});
 								$('#fullview').find('span.full-nav-prev').live('click.GridPortfolio', function(e) {
 									if( animrun ) return false;
 									animrun	= true;
-									
+
 									// circular navigation
 									if( current === 0 )
 										current = totalArticles - 1
-									else	
+									else
 										--current;
-									// update the fullview current articles number	
+									// update the fullview current articles number
 									$fullview.find('span.full-nav-current').html( current + 1 );
-									
+
 									showFullviewArticle();
 								});
-								
+
 								// switch to thumbs view
 								$('#fullview').find('span.full-view-exit').live('click.GridPortfolio', function(e) {
 									var $article	= $articles.eq( current );
 									hideArticle( $article );
 								});
 
-								// window resize 
+								// window resize
 								// center the background image if in fullview
 								// reinitialise jscrollpane
 								$(window).bind('resize.GridPortfolio', function(e) {
 									var $bgimage	= $fullview.find('img.bg-img');
 									if( $bgimage.length )
 										centerBgImage( $bgimage );
-										
+
 									$fullview.find('div.project-descr-full-wrapper').jScrollPane('reinitialise');
 								});
 
 
 							    $(document).keydown(function(e) {
 								    if(e.which == 27) {
-								        hideArticle( $articles.eq( current ) ); 
+								        hideArticle( $articles.eq( current ) );
 								    }
 								    else if (e.which == 39) {
 								    	if( animrun ) return false;
 								        animrun	= true;
-								        
+
 								        // circular navigation
 								        if( current === totalArticles - 1 )
 								        	current = 0
 								        else
 								        	++current;
-								        // update the fullview current articles number	
+								        // update the fullview current articles number
 								        $fullview.find('span.full-nav-current').html( current + 1 );
-								        
+
 								        showFullviewArticle();
 								    }
 								    else if (e.which == 37) {
 								    	if( animrun ) return false;
 								    	animrun	= true;
-								    	
+
 								    	// circular navigation
 								    	if( current === 0 )
 								    		current = totalArticles - 1
-								    	else	
+								    	else
 								    		--current;
-								    	// update the fullview current articles number	
+								    	// update the fullview current articles number
 								    	$fullview.find('span.full-nav-current').html( current + 1 );
-								    	
+
 								    	showFullviewArticle();
 								    }
 							    });
@@ -437,13 +452,13 @@
 							// at the same time fade in the overlay;
 							// build the fullview panel with the right data (template)
 							// remove the clone
-							
+
 							// this function will also be used when we close the fullview article. In this case,
 							// the difference is that we don't animate the values (just set the css values), and the clone is not removed, since we
 							// will use it for the animation (back to the thumb position)
 							showArticle				= function( $article, anim ) {
 
-								
+
 								// clone the article
 								var	$clone	= $article.clone().css({
 									left	: $article.offset().left + 'px',
@@ -452,65 +467,65 @@
 									margin	: '0px',
 									height	: $article.height() + 'px'
 								}).attr( 'id', 'article-clone' );
-								
+
 								// this is the images container which is going to "fly" down
 								var $thumbsWrapper	= $clone.find('div.thumbs-wrapper');
-								
+
 								// remove unnecessary elements from the clone
 								$clone.children().not($thumbsWrapper).remove();
 								$clone.find('div.thumbs-nav').remove();
-								
+
 								// position the clone on top of the article with the right css style
 								var padding	= 20 + 20;
 								// animate?
 								$.fn.applyStyle = ( anim ) ? $.fn.animate : $.fn.css;
-								
+
 								var clonestyle 	= {
 									width	: $(window).width() - padding + 'px',
 									height	: $(window).height() - padding + 'px',
 									left	: '0px',
 									top		: $(window).scrollTop() + 'px'
 								};
-								
+
 								$clone.appendTo( $('body') ).stop().applyStyle( clonestyle, $.extend( true, [], { duration : animspeed, easing : animeasing, complete : function() {
 									// show the panel (it will be hidden behing the clone though, until this one is removed)
 									$fullview.show()
-									
+
 									// use the template "fullviewTmpl" to build the fullview panel with the right data
 									var articleFullviewData		= getArticleFullviewData($article);
 									articleFullviewData.current	= current + 1;
 									articleFullviewData.total	= totalArticles;
 									var $fullview_content	= $('#fullviewTmpl').tmpl( articleFullviewData );
-									
+
 									$fullview_content.appendTo( $fullview );
-									
+
 									// call the gpCarousel plugin on the fullview thumbs-wrapper
 									$fullview_content.find('div.thumbs-wrapper').gpCarousel({
 										start	: $article.find('div.thumbs-wrapper').data('currentImage')
 									});
-									
+
 									// center bg image
 									centerBgImage( $fullview.find('img.bg-img') );
-									
+
 									// fade out overlay
 									$overlay.stop().css( 'opacity', 0 );
-									
+
 									// fade out clone to show the fullview panel. After that remove the clone
 									$clone.fadeOut( 300, function() { $clone.remove(); } );
 								}}));
-								
+
 								// animate the images container to the position where is going to be on fullview
 								var thumbsstyle 	= {
 									left	: $(window).width() - $thumbsWrapper.width() - 25 + 'px',  // 25 is the margin left / right of the fullview thumbs-wrapper
 									top		: ($(window).height() / 2) - ($thumbsWrapper.height() / 2) - 22 + 'px' // 10 is the margin top / bottom of the fullview thumbs-wrapper
 								};
 								$thumbsWrapper.stop().applyStyle( thumbsstyle, $.extend( true, [], { duration : animspeed, easing : animeasing} ) );
-								
+
 								// fade in overlay
 								( anim ) ? $overlay.show().fadeTo( animspeed, 0.7, animeasing ) : $overlay.show().css( 'opacity', 0.7 );
 
 
-							
+
 
 							},
 							// close the fullview
@@ -538,13 +553,13 @@
 										// show the scrollbar
 										$('body').css( 'overflow', 'visible' );
 									});
-									
+
 									// animate the clone's thumbs wrapper so it moves to the article's thumbs wrapper position
 									$thumbsWrapper.animate({
 										left	: '0px',
 										top		: '0px'
 									}, animspeed, animeasing);
-									
+
 									// fade out the overlay
 									$overlay.show().fadeTo( animspeed, 0, animeasing, function() { $overlay.hide() } );
 								});
@@ -552,7 +567,7 @@
 							// gets the article's necessary info to build the fullview panel
 							getArticleFullviewData	= function( $article ) {
 								return {
-									bgimage			: '<img usemap="image-map" src="' + $article.data('bgimage') + '" class="bg-img"></img>',
+									bgimage			: '<img usemap="img'+ current + 'map" src="' + $article.data('bgimage') + '" class="bg-img"></img>',
 									title 			: $article.find('h2.title').text(),
 									thumbs			: $article.find('div.thumbs').html(),
 									subline			: $article.find('p.subline').text(),
@@ -564,22 +579,22 @@
 							showFullviewArticle		= function() {
 								var $article					= $articles.eq( current ),
 									articleFullviewData			= getArticleFullviewData($article),
-								
+
 									$loading					= $fullview.find('span.loading-small'),
-								
+
 									$fullviewImage				= $fullview.find('img.bg-img'),
-								
+
 									$fullviewTitle				= $fullview.find('h2.title'),
-									
+
 									$fullviewSubline			= $fullview.find('p.subline'),
-									
+
 									$fullviewDescriptionWrapper	= $fullview.find('div.project-descr-full-wrapper'),
 									$fullviewDescription		= $fullviewDescriptionWrapper.find('div.project-descr-full-content'),
-									
+
 									$fullviewProjectDescrFull	= $fullview.find('div.project-descr-full'),
 									$fullviewThumbsWrapper		= $fullviewProjectDescrFull.find('div.thumbs-wrapper'),
 									$newFullviewThumbsWrapper	= $('<div class="thumbs-wrapper"><div class="thumbs">' + articleFullviewData.thumbs + '</div></div>');
-								
+								// call loadmap with current index
 								// preload the article's background image
 								$loading.show();
 								$( articleFullviewData.bgimage ).load(function() {
@@ -588,30 +603,36 @@
 									$bgImage.insertBefore( $fullviewImage );
 									// center the bg image
 									centerBgImage( $bgImage );
-									$fullviewImage.remove(); 
+									$fullviewImage.remove();
 
 
-									
+
 									$fullviewTitle.html( articleFullviewData.title );
-									
+
 									$fullviewSubline.html( articleFullviewData.subline );
-									
+
 									$fullviewDescriptionWrapper.jScrollPane('destroy');
 									$fullviewDescription.html( articleFullviewData.description );
-									
+
 									$fullviewThumbsWrapper.remove();
-									$fullviewProjectDescrFull.prepend( $newFullviewThumbsWrapper );	
+									$fullviewProjectDescrFull.prepend( $newFullviewThumbsWrapper );
 									$newFullviewThumbsWrapper.gpCarousel();
-									
+
 									animrun	= false;
 								}).attr('src', $article.data('bgimage'));
-								
+
 							},
 							// centers the background image
 							centerBgImage			= function( $img ) {
 								var dim	= getImageDim($img);
 								//set the returned values and show the image
 								$img.css({
+									width	: dim.width + 'px',
+									height	: dim.height + 'px',
+									left	: dim.left + 'px',
+									top		: dim.top + 'px'
+								});
+								$("#circles1").css({
 									width	: dim.width + 'px',
 									height	: dim.height + 'px',
 									left	: dim.left + 'px',
@@ -625,16 +646,16 @@
 								    var posY = event.clientY;
 								    var windowH = $(window).height();
 
-								    var midY = windowH / 2; 
-								    
+								    var midY = windowH / 2;
+
 								    var extraY = ($img.height() - windowH);
 
-								    var perc = (Math.abs(posY) - midY ) / midY; 
+								    var perc = (Math.abs(posY) - midY ) / midY;
 								    var delta = perc * (extraY / 2);
 
 
 								    $img.css('top', currentTop - delta + 'px');
-
+										$("#circles1").css('top', currentTop - delta + 'px');
 								});
 							},
 							//get dimentions of the image,
@@ -642,7 +663,7 @@
 							getImageDim				= function($i) {
 								var $img     = new Image();
 								$img.src     = $i.attr('src');
-										
+
 								var w_w	= $(window).width(),
 								w_h	= $(window).height(),
 								r_w	= w_h / w_w,
@@ -651,7 +672,7 @@
 								r_i	= i_h / i_w,
 								new_w,new_h,
 								new_left,new_top;
-										
+
 								if(r_w > r_i){
 									new_h	= w_h;
 									new_w	= w_h / r_i;
@@ -660,24 +681,24 @@
 									new_h	= w_w * r_i;
 									new_w	= w_w;
 								}
-										
+
 								return {
 									width	: new_w,
 									height	: new_h,
 									left	: (w_w - new_w) / 2,
 									top		: (w_h - new_h) / 2
 								};
-										
+
 							};
-						
+
 						return {
 							init	: init
 						};
-						
+
 					})()
-				
+
 				GridPortfolio.init();
-				
+
 			});
 		</script>
 	</body>

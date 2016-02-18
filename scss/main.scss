@@ -57,11 +57,14 @@
 
 .article {
 	padding: 50px 25%;
+    .quote {
+        font-size: 40px;
+        
+    }
 	p {
 		font-family: 'Droid Serif', serif; 
 		font-size: 1rem;
 		line-height: 1.6;
-
 		margin-bottom: 2rem;
 	}
 }
@@ -191,4 +194,10 @@
 		color: white;
 		font-family: 'Roboto', sans-serif;
 	}
-}	
+}
+
+@media (max-width: 1080px) {
+    .blockquote {
+        display: none;
+    }
+}
