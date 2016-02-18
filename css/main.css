@@ -1,4 +1,18 @@
-/* line 15, ../scss/main.scss */
+/* line 16, ../scss/main.scss */
+#back #arrow {
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  right: 0;
+}
+/* line 21, ../scss/main.scss */
+#back:hover #arrow {
+  right: 5px;
+}
+
+/* line 26, ../scss/main.scss */
 .landing-page {
   height: 100vh;
   width: 100vw;
@@ -6,8 +20,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-/* line 22, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 .landing-page:before {
   content: '';
   position: absolute;
@@ -18,7 +33,7 @@
   background-image: linear-gradient(to bottom right, #394D4E, #78B5B1);
   opacity: .65;
 }
-/* line 32, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 .landing-page #box {
   position: relative;
   width: 500px;
@@ -30,32 +45,32 @@
   transform: translateY(-50%);
   margin-left: -250px;
 }
-/* line 43, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .landing-page #box #title {
   position: relative;
   transform: translateY(-50%);
   top: 50%;
 }
-/* line 48, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 .landing-page #box #title h1 {
   font-size: 50px;
   font-weight: bold;
 }
-/* line 52, ../scss/main.scss */
+/* line 65, ../scss/main.scss */
 .landing-page #box #title h2 {
   font-size: 1.5rem;
   font-family: 'Droid Serif', serif;
 }
 
-/* line 60, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 .article {
   padding: 50px 25%;
 }
-/* line 62, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 .article .quote {
   font-size: 40px;
 }
-/* line 66, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 .article p {
   font-family: 'Droid Serif', serif;
   font-size: 1rem;
@@ -63,11 +78,11 @@
   margin-bottom: 2rem;
 }
 
-/* line 74, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 .thumbs-wrapper {
   overflow: hidden;
 }
-/* line 80, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb {
   background-repeat: no-repeat;
   width: 260px;
@@ -79,7 +94,7 @@
   -o-transition: background-size 350ms ease-in-out;
   transition: background-size 350ms ease-in-out;
 }
-/* line 84, ../scss/main.scss */
+/* line 97, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .title {
   font-size: 4em;
   position: absolute;
@@ -88,12 +103,12 @@
   right: 6px;
   background: none;
 }
-/* line 96, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb:hover {
   background-size: 110% !important;
   background-position: center;
 }
-/* line 97, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb:hover .thumb-overlay-wrapper .thumb-overlay {
   -webkit-transform: translateX(84%);
   -moz-transform: translateX(84%);
@@ -101,7 +116,7 @@
   -o-transform: translateX(84%);
   transform: translateX(84%);
 }
-/* line 105, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper {
   pointer-events: none;
   position: relative;
@@ -113,7 +128,7 @@
   -o-transform: skew(-40deg);
   transform: skew(-40deg);
 }
-/* line 113, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper .thumb-overlay {
   padding: 10px;
   background-color: #4FBDB5;
@@ -135,23 +150,23 @@
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 130, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .thumbs-wrapper .thumbs .thumb .thumb-overlay-wrapper:hover {
   cursor: pointer;
 }
 
-/* line 140, ../scss/main.scss */
+/* line 153, ../scss/main.scss */
 #fullview .full-view h2 {
   width: 20px !important;
 }
-/* line 143, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 #fullview .full-view .full-view-exit {
   top: 20px;
   right: 20px;
   background-color: black;
   border-radius: 50%;
 }
-/* line 149, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 #fullview .full-view .full-view-exit i {
   color: white;
   font-size: 3.5em;
@@ -168,26 +183,26 @@
   -o-transition: font-size 350ms ease-in-out;
   transition: font-size 350ms ease-in-out;
 }
-/* line 159, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 #fullview .full-view .full-view-exit:hover i {
   font-size: 4em;
 }
-/* line 166, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 #fullview .full-view .header {
   position: absolute;
   bottom: 25px;
   left: 25px;
 }
-/* line 172, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 #fullview .full-view .header .full-nav .full-nav-pages {
   width: 75px;
   text-align: center;
 }
-/* line 176, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 #fullview .full-view .header .full-nav .full-nav-pages .full-nav-current, #fullview .full-view .header .full-nav .full-nav-pages .full-nav-total {
   font-size: 2em;
 }
-/* line 181, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 #fullview .full-view .header .full-nav .full-nav-prev i, #fullview .full-view .header .full-nav .full-nav-next i {
   font-size: 2em;
   position: relative;
@@ -199,14 +214,14 @@
   transform: translateY(-50%);
 }
 
-/* line 195, ../scss/main.scss */
+/* line 208, ../scss/main.scss */
 .reference .right_ab {
   color: white;
   font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 1080px) {
-  /* line 202, ../scss/main.scss */
+  /* line 215, ../scss/main.scss */
   .blockquote {
     display: none;
   }

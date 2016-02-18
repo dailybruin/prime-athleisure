@@ -12,6 +12,17 @@
     }
 }
 
+#back {
+	#arrow {
+		@include vendorize(transition, all 350ms ease-in-out);
+		right: 0;
+	}
+
+	&:hover #arrow {
+		right: 5px;
+	}
+}
+
 .landing-page {
     height: 100vh;
     width: 100vw;
@@ -19,8 +30,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-&:before {
-    content: '';
+    background-attachment: fixed;
+
+	&:before {
+    	content: '';
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -28,7 +41,7 @@
 		left: 0;
 		background-image: linear-gradient(to bottom right,#394D4E,#78B5B1);
 		opacity: .65; 
-  }
+  	}
     #box {
         position:relative;
         width:500px;
