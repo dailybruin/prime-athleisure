@@ -15,8 +15,10 @@
 .landing-page {
     height: 100vh;
     width: 100vw;
-    background-image: url(/images/9.jpg);
+    background-image: url(../images/9.jpg);
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 &:before {
     content: '';
 		position: absolute;
@@ -44,7 +46,7 @@
             top:50%;
             
             h1 {
-                font-size: 4rem;
+                font-size: 50px;
                 font-weight: bold;
             }
             h2 {
