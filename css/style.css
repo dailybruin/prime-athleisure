@@ -274,11 +274,11 @@ p.subline{
 }
 .reference a{
 	padding:5px 2px;
-	color:#ddd;
+	color:#aaa;
 	text-align:right;
 }
 .reference a:hover{
-	color:#fff;
+	color:black;
 }
 .reference a span{
 	font-weight:bold;

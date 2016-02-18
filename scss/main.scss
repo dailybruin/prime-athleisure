@@ -15,11 +15,13 @@
 #back {
 	#arrow {
 		@include vendorize(transition, all 350ms ease-in-out);
-		right: 0;
+		right: 20px;
+		font-size: 30px; position: relative; transform: translateY(-50%); top: 50%; color: white;
+		float: right;
 	}
 
 	&:hover #arrow {
-		right: 5px;
+		right: 30px;
 	}
 }
 
@@ -52,6 +54,7 @@
         text-align:center;
         transform: translateY(-50%);
         margin-left: -250px;
+		border-bottom: 10px solid #4FBDB5;
         
         #title {
             position: relative;
@@ -59,11 +62,12 @@
             top:50%;
             
             h1 {
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: bold;
             }
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
+                letter-spacing: 3px;
                 font-family: 'Droid Serif', serif;
             }
         }
@@ -156,7 +160,7 @@
 		.full-view-exit {
 			top: 20px;
 			right: 20px;
-			background-color: black;
+			background-color: #4FBDB5;
 			border-radius: 50%;
 
 			i {
@@ -180,6 +184,7 @@
 			position: absolute; 
 			bottom: 25px; 
 			left: 25px;
+			background: #4FBDB5;
 
 			.full-nav {
 				.full-nav-pages {
@@ -205,8 +210,10 @@
 }
 
 .reference {
+	background: transparent;
 	.right_ab {
-		color: white;
+		margin-right: 10px;
+		color: black;
 		font-family: 'Roboto', sans-serif;
 	}
 }
