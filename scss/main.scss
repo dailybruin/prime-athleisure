@@ -32,9 +32,16 @@ $main-color: #3A61A5;
 }
 
 div.item.block {
-	// background: #f7f7f7 url(../images/pattern.png) repeat top left;
-	background: whitesmoke;
+	background: #f7f7f7 url(../images/pattern.png) repeat top left;
+	opacity: 0.7;
+	// background: whitesmoke;
+	padding: 20px 10px;
 	box-shadow: 1px 1px 1px #ddd;
+	@include vendorize(transition, opacity 350ms ease-in-out);
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 #grid-container {
@@ -133,7 +140,7 @@ div.item.block {
 					@include vendorize(transform, translateX(84%));
 				}
 
-				background-size: 110% !important;
+				background-size: 106% !important;
 				background-position: center;
 			}
 
