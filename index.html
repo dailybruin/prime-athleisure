@@ -375,9 +375,7 @@
 
 		$(window).load(function(){
 
-			$('div .circle').mouseover(function(){
-				console.log('yes');
-			})
+
 
 
 
@@ -742,6 +740,9 @@
 
 									$img.css('top', currentTop - delta + 'px');
 									$(".imgmap").css('top', currentTop - delta + 'px');
+								});
+								$('.circle').mouseover(function(){
+									console.log('yes');
 								});
 							},
 							//get dimentions of the image,
