@@ -6,6 +6,10 @@
 	#{$property}: $value;
 }
 
+body {
+	height: 100vh;
+}
+
 @mixin hoverActiveFocus($property, $value) {
     &:hover, &:active, &:focus {
         #{$property}: $value;
@@ -51,8 +55,8 @@ div.item.block {
 }
 
 .landing-page {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url(http://dailybruin.com/images/2016/02/9.jpg);
     background-size: cover;
     background-position: center;
