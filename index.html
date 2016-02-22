@@ -5,9 +5,10 @@
 		<title>Prime - Athleisure</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../favicon.ico">
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="" />
+		<meta property="og:title" content="Athleisure | Daily Bruin Prime" />
+	    <meta property="og:type" content="article" />
+	    <meta property="og:image" content="http://dailybruin.com/images/2016/02/9.jpg" />
+	    <meta property="og:description" content='The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.' />
 
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
@@ -23,12 +24,79 @@
 		<script id="fullviewTmpl" type="text/x-jquery-tmpl">
 			{{html bgimage}}
 
-			<div id="circles1" style="position:fixed; z-index:1000;">
-				<div id="sweater1" style="height:50px;width:50px;position:absolute;top: 39%;left: 39%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles1" style="position:fixed; z-index:1000;">
+				<div id="top1" style="height:50px;width:50px;position:absolute;top: 23%;left: 45%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="leg1" style="height:50px;width:50px;position:absolute;top: 57%;left: 50%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoe1" style="height:50px;width:50px;position:absolute;top: 72%;left: 67%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="bag1" style="height:50px;width:50px;position:absolute;top: 42%;left: 85%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
 			</div>
 
+			<div class="imgmap" id="circles2" style="position:fixed; z-index:1000;">
+				<div id="top2" style="height:50px;width:50px;position:absolute;top: 23%;left: 32%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="leg2" style="height:50px;width:50px;position:absolute;top: 57%;left: 45%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoe2" style="height:50px;width:50px;position:absolute;top: 80%;left: 56%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shirt2" style="height:50px;width:50px;position:absolute;top: 47%;left: 25%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
 
+			<div class="imgmap" id="circles3" style="position:fixed; z-index:1000;">
+				<div id="top3" style="height:50px;width:50px;position:absolute;top: 50%;left: 74%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="clutch3" style="height:50px;width:50px;position:absolute;top: 74%;left: 41%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
 
+			<div class="imgmap" id="circles4" style="position:fixed; z-index:1000;">
+				<div id="jacket4" style="height:50px;width:50px;position:absolute;top: 26%;left: 56%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="top4" style="height:50px;width:50px;position:absolute;top: 32%;left: 37%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="leg4" style="height:50px;width:50px;position:absolute;top: 59%;left: 33%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoes4" style="height:50px;width:50px;position:absolute;top: 89%;left: 70%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles5" style="position:fixed; z-index:1000;">
+				<div id="top5" style="height:50px;width:50px;position:absolute;top: 20%;left: 40%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="leg5" style="height:50px;width:50px;position:absolute;top: 53%;left: 57%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoe5" style="height:50px;width:50px;position:absolute;top: 85%;left: 57%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles6" style="position:fixed; z-index:1000;">
+				<div id="beanie6" style="height:50px;width:50px;position:absolute;top: 8%;left: 35%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="jacket6" style="height:50px;width:50px;position:absolute;top: 23%;left: 46%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="sweater6" style="height:50px;width:50px;position:absolute;top: 33%;left: 33%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="leg6" style="height:50px;width:50px;position:absolute;top: 45%;left: 39%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoe6" style="height:50px;width:50px;position:absolute;top: 63%;left: 29%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles7" style="position:fixed; z-index:1000;">
+			<div id="beanie7" style="height:50px;width:50px;position:absolute;top: 12%;left: 35%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="jacket7" style="height:50px;width:50px;position:absolute;top: 27%;left: 42%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="sweater7" style="height:50px;width:50px;position:absolute;top: 47%;left: 31%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="leg7" style="height:50px;width:50px;position:absolute;top: 57%;left: 38%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="shoe7" style="height:50px;width:50px;position:absolute;top: 78%;left: 44%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles8" style="position:fixed; z-index:1000;">
+				<div id="top8" style="height:50px;width:50px;position:absolute;top: 26%;left: 57%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="leg8" style="height:50px;width:50px;position:absolute;top: 56%;left: 38%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoe8" style="height:50px;width:50px;position:absolute;top: 87%;left: 53%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles9" style="position:fixed; z-index:1000;">
+				<div id="top9" style="height:50px;width:50px;position:absolute;top: 50%;left: 74%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles10" style="position:fixed; z-index:1000;">
+				<div id="top10" style="height:50px;width:50px;position:absolute;top: 37%;left: 68%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="short10" style="height:50px;width:50px;position:absolute;top: 51%;left: 66%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+				<div id="shoe10" style="height:50px;width:50px;position:absolute;top: 51%;left: 9%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles11" style="position:fixed; z-index:1000;">
+			<div id="top11" style="height:50px;width:50px;position:absolute;top: 20%;left: 53%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="short11" style="height:50px;width:50px;position:absolute;top: 49%;left: 52%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="shoe11" style="height:50px;width:50px;position:absolute;top: 74%;left: 56%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div id="bag11" style="height:50px;width:50px;position:absolute;top: 71%;left: 32%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			</div>
+
+			<div class="imgmap" id="circles12" style="position:fixed; z-index:1000;">
+			</div>
 
 			<div class="full-view">
 				<span class="full-view-exit"><i class="fa fa-times"></i></span>
@@ -51,7 +119,7 @@
 	<body>
 		<a href="http://prime.dailybruin.com" id="back"><div><i id="arrow" class="fa fa-chevron-left"></i></div></a>
 
-		
+
 
 		<div class="landing-page">
         	<div id="box" class="animated fadeInUp">
@@ -67,7 +135,7 @@
 			<h3 style="font-size: 1rem; font-family: 'Roboto', sans-serif; margin-bottom: 1rem;">BY <b><a style="text-decoration: none; color: black;" href="mailto:ayeo@media.ucla.edu">AUBREY YEO</a></b></h3>
 
 			<p>The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.</p>
-            
+
             <p>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</p>
 
 			<p>Fashion brands have been quick to jump on the trend as we see activewear collections, filled with sweatpants, hoodies and leggings, become a mainstay in clothing lines released by European fashion giants H&M and Zara.</p>
@@ -77,10 +145,10 @@
 			<p>“I live in gym clothes,” Wang said. “When you go out on the street, it’s the uniform now.”</p>
 
 			<p>The athleisure movement has also managed to effect change in the reverse direction, with sporting goods powerhouses like Nike and Adidas reimagining their classic sportswear designs into fashion must-haves through collaborations such as NikeLab between Nike and Japanese label Sacai, and Adidas' collaboration with Moschino's Creative Director Jeremy Scott as well as celebrities Kanye West and Rita Ora.</p>
-        <div class="blockquote" style="width: 45%; height: 295px; float: right; padding: 0px 0px 0px 10px; border-left: 6px solid black; font-family: 'Oswald'; margin: 0px 20px">
+        <div class="blockquote" style="width: 45%; height: 277px; float: right; padding: 0px 0px 0px 10px; border-left: 6px solid black; font-family: 'Oswald'; margin: 0px 20px">
                 <div class="quote" style="width: 10px; height: 30px;">"</div>
                 <div style="padding: 0px 10px 0px 20px;">
-                    <p style="font-size: 1.0rem; margin-bottom: 0px; margin-top: 8px;"><b><i>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</i></b></p>
+                    <p style="font-size: 1.14rem; margin-bottom: 0px; margin-top: 8px;"><b><i>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons.</i></b></p>
                 </div>
                 <div class="quote" style="float: right; width: 10px; height: 20px; margin-bottom: 0px;">"</div>
                 <div class="clr"></div>
@@ -410,6 +478,7 @@
 									var $bgimage	= $fullview.find('img.bg-img');
 									if( $bgimage.length )
 										centerBgImage( $bgimage );
+										getImageMap(current + 1);
 
 									$fullview.find('div.project-descr-full-wrapper').jScrollPane('reinitialise');
 								});
@@ -512,7 +581,7 @@
 
 									// center bg image
 									centerBgImage( $fullview.find('img.bg-img') );
-
+									getImageMap(current + 1);
 									// fade out overlay
 									$overlay.stop().css( 'opacity', 0 );
 
@@ -609,6 +678,7 @@
 									$bgImage.insertBefore( $fullviewImage );
 									// center the bg image
 									centerBgImage( $bgImage );
+									getImageMap(current + 1);
 									$fullviewImage.remove();
 
 
@@ -638,7 +708,7 @@
 									left	: dim.left + 'px',
 									top		: dim.top + 'px'
 								});
-								$("#circles1").css({
+								$(".imgmap").css({
 									width	: dim.width + 'px',
 									height	: dim.height + 'px',
 									left	: dim.left + 'px',
@@ -661,7 +731,7 @@
 
 
 								    $img.css('top', currentTop - delta + 'px');
-										$("#circles1").css('top', currentTop - delta + 'px');
+										$(".imgmap").css('top', currentTop - delta + 'px');
 								});
 							},
 							//get dimentions of the image,
@@ -696,6 +766,10 @@
 								};
 
 							};
+							getImageMap		= function(index) {
+								$(".imgmap").hide();
+								$("#circles"+index).show();
+							}
 
 						return {
 							init	: init
