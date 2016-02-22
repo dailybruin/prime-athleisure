@@ -18,6 +18,22 @@ body {
 
 $main-color: #3A61A5;
 
+.circle {
+	height:50px;width:50px;position:absolute;
+	background-color: rgba(58,97,165,.45);
+	z-index:2000;
+	border-radius: 50%;
+	cursor: pointer;
+
+	@include vendorize(transition, background-color 350ms ease-in-out);
+
+
+
+	&:hover {
+		background-color: rgba(58,97,165,.85);
+	}
+}
+
 #back {
 	#arrow {
 		@include vendorize(transition, all 350ms ease-in-out);
