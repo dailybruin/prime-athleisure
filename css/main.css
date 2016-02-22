@@ -282,7 +282,7 @@ div.item.block:hover {
     padding: 10px;
   }
 }
-@media (max-width: 1252px) {
+@media (max-width: 1255px) {
   /* line 267, ../scss/main.scss */
   .blockquote {
     display: none;
