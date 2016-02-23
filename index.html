@@ -107,7 +107,7 @@
 
 			
 			<span class="full-view-exit"><i class="fa fa-times"></i></span>
-			<div id="caption" style="position: absolute; bottom: 125px; left: 25px; background: #3A61A5; width: 139px; height: 150px; padding: 20px 30px; margin: 5px;">
+			<div id="caption" style="position: absolute; bottom: 125px; left: 25px; background: #3A61A5; width: 139px; height: 140px; padding: 20px 30px; margin: 5px;">
 				<p style="font-size: 1rem; color: white; border-bottom: 1px solid white; margin-bottom: 5px;">Model</p>
 				<p id="model" style="font-style: italic; color: white; margin-bottom: 5px;"></p>
 
@@ -599,7 +599,19 @@
 
 									// center bg image
 									centerBgImage( $fullview.find('img.bg-img') );
+
+
 									getImageMap(current + 1);
+									if (current <= 3) {
+										$('#model').html('Julie Consani, fifth-year sociology student')
+									}
+									else if (current <= 7) {
+										$('#model').html('Greta Lorenz, third-year Design | Media Arts student')
+									}
+									else {
+										$('#model').html('Lilly Thomas - Fourth-year global studies student')
+									}
+
 									// fade out overlay
 									$overlay.stop().css( 'opacity', 0 );
 
