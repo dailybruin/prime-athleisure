@@ -605,15 +605,6 @@
 
 
 									getImageMap(current + 1);
-									if (current <= 3) {
-										$('#model').html('Julie Consani, fifth-year sociology student')
-									}
-									else if (current <= 7) {
-										$('#model').html('Greta Lorenz, third-year Design | Media Arts student')
-									}
-									else {
-										$('#model').html('Lilly Thomas - Fourth-year global studies student')
-									}
 
 									// fade out overlay
 									$overlay.stop().css( 'opacity', 0 );
@@ -750,6 +741,16 @@
 
 								var currentTop = parseInt($img.css('top'), 10);
 
+								if (current <= 3) {
+									$('#model').html('Julie Consani, fifth-year sociology student')
+								}
+								else if (current <= 7) {
+									$('#model').html('Greta Lorenz, third-year Design | Media Arts student')
+								}
+								else {
+									$('#model').html('Lilly Thomas - Fourth-year global studies student')
+								}
+
 								$(window).bind('mousemove', function(event) {
 
 									var posY = event.clientY;
@@ -768,8 +769,6 @@
 								});
 								$('.circle').mouseover(function(){
 									$('#outfit').html($(this).data("outfit"));
-
-									// console.log($(this).data("outfit"));
 								});
 							},
 							//get dimentions of the image,
