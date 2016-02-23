@@ -1,378 +1,399 @@
 <!doctype html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Prime - Athleisure</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="../favicon.ico">
-		<meta property="og:title" content="Athleisure | Daily Bruin Prime" />
-	    <meta property="og:type" content="article" />
-	    <meta property="og:image" content="http://dailybruin.com/images/2016/02/9.jpg" />
-	    <meta property="og:description" content='The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.' />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Prime - Athleisure</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta property="og:title" content="Athleisure | Daily Bruin Prime" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://dailybruin.com/images/2016/02/9.jpg" />
+	<meta property="og:description" content='The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.' />
 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 
-		<!-- Fullscreen jQuery template -->
-		<script id="fullviewTmpl" type="text/x-jquery-tmpl">
-			{{html bgimage}}
+	<!-- Fullscreen jQuery template -->
+	<script id="fullviewTmpl" type="text/x-jquery-tmpl">
+		{{html bgimage}}
 
-			<div class="imgmap" id="circles1" style="position:fixed; z-index:1000;">
-				<div id="top1" style="height:50px;width:50px;position:absolute;top: 23%;left: 45%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="leg1" style="height:50px;width:50px;position:absolute;top: 57%;left: 50%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoe1" style="height:50px;width:50px;position:absolute;top: 72%;left: 67%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="bag1" style="height:50px;width:50px;position:absolute;top: 42%;left: 85%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+
+		<div class="full-view">
+			<div class="imgmap" id="circles1" style="position:fixed;">
+				<div class="circle" id="top1" style="top: 23%;left: 45%;" data-outfit="Long Sleeved Top - adidas"></div>
+				<div class="circle" id="leg1" style="top: 57%;left: 50%;" data-outfit="Leggings - lululemon athletica"></div>
+				<div class="circle" id="shoe1" style="top: 72%;left: 67%;" data-outfit="Sneakers – adidas"></div>
+				<div class="circle" id="bag1" style="top: 42%;left: 85%;" data-outfit="Handbag – Louis Vuitton"></div>
 			</div>
 
-			<div class="imgmap" id="circles2" style="position:fixed; z-index:1000;">
-				<div id="top2" style="height:50px;width:50px;position:absolute;top: 23%;left: 32%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="leg2" style="height:50px;width:50px;position:absolute;top: 57%;left: 45%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoe2" style="height:50px;width:50px;position:absolute;top: 80%;left: 56%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shirt2" style="height:50px;width:50px;position:absolute;top: 47%;left: 25%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles2" style="position:fixed;">
+				<div class="circle" id="top2" style="top: 23%;left: 32%;" data-outfit="Top – Urban Outfitters"></div>
+				<div class="circle" id="leg2" style="top: 57%;left: 45%;" data-outfit="Leggings – lululemon athletica"></div>
+				<div class="circle" id="shoe2" style="top: 80%;left: 56%;" data-outfit="Sneakers – Vans"></div>
+				<div class="circle" id="shirt2" style="top: 47%;left: 25%;" data-outfit="Flannel Shirt – Target"></div>
 			</div>
 
-			<div class="imgmap" id="circles3" style="position:fixed; z-index:1000;">
-				<div id="top3" style="height:50px;width:50px;position:absolute;top: 50%;left: 74%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="clutch3" style="height:50px;width:50px;position:absolute;top: 74%;left: 41%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles3" style="position:fixed;">
+				<div class="circle" id="top3" style="top: 50%;left: 74%;" data-outfit="Top – Urban Outfitters"></div>
+				<div class="circle" id="clutch3" style="top: 74%;left: 41%;" data-outfit="Clutch – Kate Spade"></div>
 			</div>
 
-			<div class="imgmap" id="circles4" style="position:fixed; z-index:1000;">
-				<div id="jacket4" style="height:50px;width:50px;position:absolute;top: 26%;left: 56%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="top4" style="height:50px;width:50px;position:absolute;top: 32%;left: 37%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="leg4" style="height:50px;width:50px;position:absolute;top: 59%;left: 33%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoes4" style="height:50px;width:50px;position:absolute;top: 89%;left: 70%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles4" style="position:fixed;">
+				<div class="circle" id="jacket4" style="top: 26%;left: 56%;" data-outfit="Jacket – Patagonia"></div>
+				<div class="circle" id="top4" style="top: 32%;left: 37%;" data-outfit="Tank Top – Urban Outfitters"></div>
+				<div class="circle" id="leg4" style="top: 59%;left: 33%;" data-outfit="Leggings – lululemon athletica"></div>
+				<div class="circle" id="shoes4" style="top: 89%;left: 70%;" data-outfit="Shoes – adidas"></div>
 			</div>
 
-			<div class="imgmap" id="circles5" style="position:fixed; z-index:1000;">
-				<div id="top5" style="height:50px;width:50px;position:absolute;top: 20%;left: 40%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="leg5" style="height:50px;width:50px;position:absolute;top: 53%;left: 57%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoe5" style="height:50px;width:50px;position:absolute;top: 85%;left: 57%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles5" style="position:fixed;">
+				<div class="circle" id="top5" style="top: 20%;left: 40%;" data-outfit="Shirt – Urban Outfitters"></div>
+				<div class="circle" id="leg5" style="top: 53%;left: 57%;" data-outfit="Joggers – lululemon athletica"></div>
+				<div class="circle" id="shoe5" style="top: 85%;left: 57%;" data-outfit="Shoes – Nike"></div>
 			</div>
 
-			<div class="imgmap" id="circles6" style="position:fixed; z-index:1000;">
-				<div id="beanie6" style="height:50px;width:50px;position:absolute;top: 8%;left: 35%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="jacket6" style="height:50px;width:50px;position:absolute;top: 23%;left: 46%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="sweater6" style="height:50px;width:50px;position:absolute;top: 33%;left: 33%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="leg6" style="height:50px;width:50px;position:absolute;top: 45%;left: 39%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoe6" style="height:50px;width:50px;position:absolute;top: 63%;left: 29%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles6" style="position:fixed;">
+				<div class="circle" id="beanie6" style="top: 8%;left: 35%;" data-outfit="Beanie – Frost Originals"></div>
+				<div class="circle" id="jacket6" style="top: 23%;left: 46%;" data-outfit="Jacket – Vintage (from mother)"></div>
+				<div class="circle" id="sweater6" style="top: 33%;left: 33%;" data-outfit="Sweater – Urban Outfitters"></div>
+				<div class="circle" id="leg6" style="top: 45%;left: 39%;" data-outfit="Leggings – lululemon athletica"></div>
+				<div class="circle" id="shoe6" style="top: 63%;left: 29%;" data-outfit="Shoes – Steve Madden"></div>
 			</div>
 
-			<div class="imgmap" id="circles7" style="position:fixed; z-index:1000;">
-			<div id="beanie7" style="height:50px;width:50px;position:absolute;top: 12%;left: 35%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="jacket7" style="height:50px;width:50px;position:absolute;top: 27%;left: 42%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="sweater7" style="height:50px;width:50px;position:absolute;top: 47%;left: 31%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="leg7" style="height:50px;width:50px;position:absolute;top: 57%;left: 38%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="shoe7" style="height:50px;width:50px;position:absolute;top: 78%;left: 44%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles7" style="position:fixed;">
+				<div class="circle" id="beanie7" style="top: 12%;left: 35%;" data-outfit="Beanie – Frost Originals"></div>
+				<div class="circle" id="jacket7" style="top: 27%;left: 42%;" data-outfit="Jacket – Vintage (from mother)"></div>
+				<div class="circle" id="sweater7" style="top: 47%;left: 31%;" data-outfit="Sweater – Urban Outfitters"></div>
+				<div class="circle" id="leg7" style="top: 57%;left: 38%;" data-outfit="Leggings – lululemon athletica"></div>
+				<div class="circle" id="shoe7" style="top: 78%;left: 44%;" data-outfit="Shoes – Steve Madden"></div>
 			</div>
 
-			<div class="imgmap" id="circles8" style="position:fixed; z-index:1000;">
-				<div id="top8" style="height:50px;width:50px;position:absolute;top: 26%;left: 57%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="leg8" style="height:50px;width:50px;position:absolute;top: 56%;left: 38%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoe8" style="height:50px;width:50px;position:absolute;top: 87%;left: 53%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles8" style="position:fixed;">
+				<div class="circle" id="top8" style="top: 26%;left: 57%;" data-outfit="Top – Vintage (from mother)"></div>
+				<div class="circle" id="leg8" style="top: 56%;left: 38%;" data-outfit="Joggers – lululemon athletica"></div>
+				<div class="circle" id="shoe8" style="top: 87%;left: 53%;" data-outfit="Shoes – Converse "></div>
 			</div>
 
-			<div class="imgmap" id="circles9" style="position:fixed; z-index:1000;">
-				<div id="top9" style="height:50px;width:50px;position:absolute;top: 50%;left: 74%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles9" style="position:fixed;">
+				<div class="circle" id="top9" style="top: 55%;left: 50%;" data-outfit="Top – adidas"></div>
 			</div>
 
-			<div class="imgmap" id="circles10" style="position:fixed; z-index:1000;">
-				<div id="top10" style="height:50px;width:50px;position:absolute;top: 37%;left: 68%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="short10" style="height:50px;width:50px;position:absolute;top: 51%;left: 66%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-				<div id="shoe10" style="height:50px;width:50px;position:absolute;top: 51%;left: 9%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles10" style="position:fixed;">
+				<div class="circle" id="top10" style="top: 37%;left: 68%;" data-outfit="Top – GapFit"></div>
+				<div class="circle" id="short10" style="top: 51%;left: 66%;" data-outfit="Shorts – lululemon athletica"></div>
+				<div class="circle" id="shoe10" style="top: 51%;left: 9%;" data-outfit="Shoes – Nike"></div>
 			</div>
 
-			<div class="imgmap" id="circles11" style="position:fixed; z-index:1000;">
-			<div id="top11" style="height:50px;width:50px;position:absolute;top: 20%;left: 53%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="short11" style="height:50px;width:50px;position:absolute;top: 49%;left: 52%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="shoe11" style="height:50px;width:50px;position:absolute;top: 74%;left: 56%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
-			<div id="bag11" style="height:50px;width:50px;position:absolute;top: 71%;left: 32%;border-radius:50%;background-color: rgba(58,97,165,.45);z-index:2000">      </div>
+			<div class="imgmap" id="circles11" style="position:fixed;">
+				<div class="circle" id="top11" style="top: 20%;left: 53%;" data-outfit="Top – GapFit"></div>
+				<div class="circle" id="short11" style="top: 49%;left: 52%;" data-outfit="Shorts – lululemon athletica"></div>
+				<div class="circle" id="shoe11" style="top: 74%;left: 56%;" data-outfit="Shoes – Nike"></div>
+				<div class="circle" id="bag11" style="top: 71%;left: 32%;" data-outfit="Bag – Badgley Mischka"></div>
 			</div>
 
-			<div class="imgmap" id="circles12" style="position:fixed; z-index:1000;">
+			<div class="imgmap" id="circles12" style="position:fixed;">
+				<div class="circle" id="top12" style="top: 17%;left: 50%;height: 35px;width: 35px" data-outfit="Top – GapFit"></div>
+				<div class="circle" id="short12" style="top: 22%; left: 49%;height: 35px;width: 35px" data-outfit="Shorts – lululemon athletica"></div>
+				<div class="circle" id="shoe12" style="top: 28%; left: 40%;height: 35px;width: 35px" data-outfit="Shoes – Nike"></div>
 			</div>
 
-			<div class="full-view">
-				<span class="full-view-exit"><i class="fa fa-times"></i></span>
-				<div class="header">
-					<!-- <h2 class="title">${title}</h2> -->
-					<div class="full-nav">
-						<span class="full-nav-prev"><i class="fa fa-chevron-left"></i></span>
-						<span class="full-nav-pages">
-							<span class="full-nav-current">${current}</span> of
-							<span class="full-nav-total">${total}</span>
-						</span>
-						<span class="full-nav-next"><i class="fa fa-chevron-right"></i></span>
-					</div>
-					<span class="loading-small"></span>
+
+
+			
+			<span class="full-view-exit"><i class="fa fa-times"></i></span>
+			<div id="caption" style="position: absolute; bottom: 125px; left: 25px; background: #3A61A5; width: 139px; height: 170px; padding: 20px 30px; margin: 5px;">
+				<p style="font-size: 1rem; color: white; border-bottom: 1px solid white; margin-bottom: 5px;">Model</p>
+				<p id="model" style="font-style: italic; color: white; margin-bottom: 8px;"></p>
+
+				<p style="font-size: 1rem; color: white; border-bottom: 1px solid white; margin-bottom: 5px;">Photo</p>
+				<p style="font-style: italic; color: white; margin-bottom: 8px;">Aubrey Yeo</p>
+
+				<p style="font-size: 1rem; color: white; border-bottom: 1px solid white; margin-bottom: 5px;">Clothing</p>
+				<p id="outfit" style="font-style: italic; color: white; margin-bottom: 5px;">(hover over the circles)</p>
+			</div>
+			<div class="header">
+				<!-- <h2 class="title">${title}</h2> -->
+				<div class="full-nav">
+					<span class="full-nav-prev"><i class="fa fa-chevron-left"></i></span>
+					<span class="full-nav-pages">
+						<span class="full-nav-current">${current}</span> of
+						<span class="full-nav-total">${total}</span>
+					</span>
+					<span class="full-nav-next"><i class="fa fa-chevron-right"></i></span>
 				</div>
+				<span class="loading-small"></span>
+			</div>
 
-			</div><!-- full-view -->
-		</script>
-	</head>
-	<body>
-		<a href="http://prime.dailybruin.com" id="back"><div><i id="arrow" class="fa fa-chevron-left"></i></div></a>
+		</div><!-- full-view -->
+	</script>
+</head>
+<body>
+	<a href="http://prime.dailybruin.com" id="back"><div><i id="arrow" class="fa fa-chevron-left"></i></div></a>
 
 
 
-		<div class="landing-page">
-        	<div id="box" class="animated fadeInUp">
-                <div id="title">
-                    <!-- <h1>Athleisure</h1> -->
-                    <img src="images/title.svg" style="width: 80%" alt="">
-                    <h2 style="color: #555;">keep it casual</h2>
-                </div>
-        	</div>
-        </div>
-
-		<article class="article">
-			<h3 style="font-size: 1rem; font-family: 'Roboto', sans-serif; margin-bottom: 1rem;">BY <b><a style="text-decoration: none; color: black;" href="mailto:ayeo@media.ucla.edu">AUBREY YEO</a></b></h3>
-
-			<p>The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.</p>
-
-            <p>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</p>
-
-			<p>Fashion brands have been quick to jump on the trend as we see activewear collections, filled with sweatpants, hoodies and leggings, become a mainstay in clothing lines released by European fashion giants H&M and Zara.</p>
-
-			<p>Designer labels have also taken the plunge into this trend, with designer Alexander Wang professing his love of activewear to The New York Times about a year ago.</p>
-
-			<p>“I live in gym clothes,” Wang said. “When you go out on the street, it’s the uniform now.”</p>
-
-			<p>The athleisure movement has also managed to effect change in the reverse direction, with sporting goods powerhouses like Nike and Adidas reimagining their classic sportswear designs into fashion must-haves through collaborations such as NikeLab between Nike and Japanese label Sacai, and Adidas' collaboration with Moschino's Creative Director Jeremy Scott as well as celebrities Kanye West and Rita Ora.</p>
-        <div class="blockquote" style="width: 45%; height: 277px; float: right; padding: 0px 0px 0px 10px; border-left: 6px solid black; font-family: 'Oswald'; margin: 0px 20px">
-                <div class="quote" style="width: 10px; height: 30px;">"</div>
-                <div style="padding: 0px 10px 0px 20px;">
-                    <p style="font-size: 1.14rem; margin-bottom: 0px; margin-top: 8px;"><b><i>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons.</i></b></p>
-                </div>
-                <div class="quote" style="float: right; width: 10px; height: 20px; margin-bottom: 0px;">"</div>
-                <div class="clr"></div>
-        </div>
-			<p>And consumers are loving it. Jeans – the once-classic casual outfit staple – saw a decline to $16 billion in domestic sales in the 2013-2014 fiscal year, while the activewear industry continues to explode with revenue, bringing in double that number at $33.6 billion that same year. Based on these figures alone, it’s a no-brainer why many within the apparel industry are jumping on the athleisure bandwagon.</p>
-
-			<p>So the next time you see someone with joggers and a pair of Nike Flyknits, they might be headed to the gym to get a cardio fix. But who knows, maybe that person could just be headed to class.</p>
-		</article>
-		<div id="grid-container">
-			<div class="container" id="container" style="margin: 0 auto;">
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/1.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/1.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">1</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/2.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/2.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">2</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/3.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/3.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">3</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/4.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/4.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">4</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/5.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/5.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">5</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/6.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/6.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">6</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/7.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/7.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">7</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/8.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/8.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">8</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/9.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/9.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">9</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/10.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/10.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">10</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/11.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/11.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">11</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-				<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/12.jpg">
-					<a href="#" class="more_link">
-						<div class="thumbs-wrapper">
-							<div class="thumbs">
-								<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/12.jpg');">
-									<div class="thumb-overlay-wrapper">
-										<div class="thumb-overlay"></div>
-									</div>
-									<h2 class="title">12</h2>
-								</div>
-
-							</div>
-						</div>
-					</a>
-
-				</div>
-
-				<div class="clr"></div>
-			</div><!-- container -->
+	<div class="landing-page">
+		<div id="box" class="animated fadeInUp">
+			<div id="title">
+				<!-- <h1>Athleisure</h1> -->
+				<img src="images/title.svg" style="width: 80%" alt="">
+				<h2 style="color: #555;">keep it casual</h2>
+			</div>
 		</div>
-		<footer class="reference">
-			<span class="right_ab">
-				Page by <a href="https://github.com/shampliu">Chang Liu</a>, <a href="https://github.com/nicklyz">Nick Liu</a>, <a href="https://github.com/amberwon">Amber Won</a>, <a href="https://github.com/aguziak">Alex Guziak</a> and <a href="https://github.com/jenxu">Jennifer Xu</a>
-			</span>
-		</footer>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<!-- the jScrollPane script -->
-		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-		<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
-		<script type="text/javascript" src="js/jquery.gpCarousel.js"></script>
-		<script type="text/javascript">
+	</div>
 
-			$(window).load(function(){
+	<article class="article">
+		<h3 style="font-size: 1rem; font-family: 'Roboto', sans-serif; margin-bottom: 1rem;">BY <b><a style="text-decoration: none; color: black;" href="mailto:ayeo@media.ucla.edu">AUBREY YEO</a></b></h3>
+
+		<p>The comfort and maneuverability of sportswear used to be devalued by the opportunity cost of style – it was a time when activewear seemed to exist in a different dimension from the realm of fashion.</p>
+
+		<p>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons – the same world that now hosts the ubiquity of Lululemon Athletica on college campuses.</p>
+
+		<p>Fashion brands have been quick to jump on the trend as we see activewear collections, filled with sweatpants, hoodies and leggings, become a mainstay in clothing lines released by European fashion giants H&M and Zara.</p>
+
+		<p>Designer labels have also taken the plunge into this trend, with designer Alexander Wang professing his love of activewear to The New York Times about a year ago.</p>
+
+		<p>“I live in gym clothes,” Wang said. “When you go out on the street, it’s the uniform now.”</p>
+
+		<p>The athleisure movement has also managed to effect change in the reverse direction, with sporting goods powerhouses like Nike and Adidas reimagining their classic sportswear designs into fashion must-haves through collaborations such as NikeLab between Nike and Japanese label Sacai, and Adidas' collaboration with Moschino's Creative Director Jeremy Scott as well as celebrities Kanye West and Rita Ora.</p>
+		<div class="blockquote" style="width: 45%; height: 277px; float: right; padding: 0px 0px 0px 10px; border-left: 6px solid black; font-family: 'Oswald'; margin: 0px 20px">
+			<div class="quote" style="width: 10px; height: 30px;">"</div>
+			<div style="padding: 0px 10px 0px 20px;">
+				<p style="font-size: 1.14rem; margin-bottom: 0px; margin-top: 8px;"><b><i>But the "athleisure" revolution has blurred those lines in recent years and created a world in which Stan Smiths have ascended from humble Adidas tennis shoes to style icons.</i></b></p>
+			</div>
+			<div class="quote" style="float: right; width: 10px; height: 20px; margin-bottom: 0px;">"</div>
+			<div class="clr"></div>
+		</div>
+		<p>And consumers are loving it. Jeans – the once-classic casual outfit staple – saw a decline to $16 billion in domestic sales in the 2013-2014 fiscal year, while the activewear industry continues to explode with revenue, bringing in double that number at $33.6 billion that same year. Based on these figures alone, it’s a no-brainer why many within the apparel industry are jumping on the athleisure bandwagon.</p>
+
+		<p>So the next time you see someone with joggers and a pair of Nike Flyknits, they might be headed to the gym to get a cardio fix. But who knows, maybe that person could just be headed to class.</p>
+	</article>
+	<div id="grid-container">
+		<div class="container" id="container" style="margin: 0 auto;">
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/1.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/1.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">1</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/2.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/2.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">2</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/3.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/3.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">3</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/4.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/4.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">4</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/5.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/5.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">5</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/6.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/6.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">6</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/7.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/7.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">7</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/8.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/8.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">8</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/9.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/9.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">9</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/10.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/10.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">10</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/11.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/11.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">11</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="item block" data-bgimage="http://dailybruin.com/images/2016/02/12.jpg">
+				<a href="#" class="more_link">
+					<div class="thumbs-wrapper">
+						<div class="thumbs">
+							<div class="thumb" style="background: url('http://dailybruin.com/images/2016/02/12.jpg');">
+								<div class="thumb-overlay-wrapper">
+									<div class="thumb-overlay"></div>
+								</div>
+								<h2 class="title">12</h2>
+							</div>
+
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="clr"></div>
+		</div><!-- container -->
+	</div>
+	<footer class="reference">
+		<span class="right_ab">
+			Page by <a href="https://github.com/shampliu">Chang Liu</a>, <a href="https://github.com/nicklyz">Nick Liu</a>, <a href="https://github.com/amberwon">Amber Won</a>, <a href="https://github.com/aguziak">Alex Guziak</a> and <a href="https://github.com/jenxu">Jennifer Xu</a>
+		</span>
+	</footer>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<!-- the jScrollPane script -->
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/jquery.gpCarousel.js"></script>
+	<script type="text/javascript">
+
+		$(window).load(function(){
+
+
+
+
 
 					// the main container
-				var $GPContainer	= $('#container'),
+					var $GPContainer	= $('#container'),
 					// the articles (the thumbs)
 					$articles		= $GPContainer.children('div.block'),
 					// total number of articles
@@ -384,7 +405,7 @@
 
 					GridPortfolio	= (function() {
 							// current will be the index of the current article
-						var animspeed				= 500,
+							var animspeed				= 500,
 							animeasing				= 'easeOutExpo', // try easeOutExpo
 							current					= -1,
 							// indicates if certain elements can be animated or not at a given time
@@ -478,19 +499,19 @@
 									var $bgimage	= $fullview.find('img.bg-img');
 									if( $bgimage.length )
 										centerBgImage( $bgimage );
-										getImageMap(current + 1);
+									getImageMap(current + 1);
 
 									$fullview.find('div.project-descr-full-wrapper').jScrollPane('reinitialise');
 								});
 
 
-							    $(document).keydown(function(e) {
-								    if(e.which == 27) {
-								        hideArticle( $articles.eq( current ) );
-								    }
-								    else if (e.which == 39) {
-								    	if( animrun ) return false;
-								        animrun	= true;
+								$(document).keydown(function(e) {
+									if(e.which == 27) {
+										hideArticle( $articles.eq( current ) );
+									}
+									else if (e.which == 39) {
+										if( animrun ) return false;
+										animrun	= true;
 
 								        // circular navigation
 								        if( current === totalArticles - 1 )
@@ -516,7 +537,7 @@
 
 								    	showFullviewArticle();
 								    }
-							    });
+								});
 
 							},
 							// the clicked article will be cloned;
@@ -581,7 +602,19 @@
 
 									// center bg image
 									centerBgImage( $fullview.find('img.bg-img') );
+
+
 									getImageMap(current + 1);
+									if (current <= 3) {
+										$('#model').html('Julie Consani, fifth-year sociology student')
+									}
+									else if (current <= 7) {
+										$('#model').html('Greta Lorenz, third-year Design | Media Arts student')
+									}
+									else {
+										$('#model').html('Lilly Thomas - Fourth-year global studies student')
+									}
+
 									// fade out overlay
 									$overlay.stop().css( 'opacity', 0 );
 
@@ -611,7 +644,7 @@
 								$overlay.hide();
 								// reference to the created clone and its thumbs wrapper
 								var $clone			= $('#article-clone'),
-									$thumbsWrapper	= $clone.find('div.thumbs-wrapper');
+								$thumbsWrapper	= $clone.find('div.thumbs-wrapper');
 								// fade in the clone
 								$clone.hide().fadeIn( 200, function() {
 									// remove the contents of the fullview container
@@ -653,22 +686,22 @@
 							// needs to get the next / previous article's info
 							showFullviewArticle		= function() {
 								var $article					= $articles.eq( current ),
-									articleFullviewData			= getArticleFullviewData($article),
+								articleFullviewData			= getArticleFullviewData($article),
 
-									$loading					= $fullview.find('span.loading-small'),
+								$loading					= $fullview.find('span.loading-small'),
 
-									$fullviewImage				= $fullview.find('img.bg-img'),
+								$fullviewImage				= $fullview.find('img.bg-img'),
 
-									$fullviewTitle				= $fullview.find('h2.title'),
+								$fullviewTitle				= $fullview.find('h2.title'),
 
-									$fullviewSubline			= $fullview.find('p.subline'),
+								$fullviewSubline			= $fullview.find('p.subline'),
 
-									$fullviewDescriptionWrapper	= $fullview.find('div.project-descr-full-wrapper'),
-									$fullviewDescription		= $fullviewDescriptionWrapper.find('div.project-descr-full-content'),
+								$fullviewDescriptionWrapper	= $fullview.find('div.project-descr-full-wrapper'),
+								$fullviewDescription		= $fullviewDescriptionWrapper.find('div.project-descr-full-content'),
 
-									$fullviewProjectDescrFull	= $fullview.find('div.project-descr-full'),
-									$fullviewThumbsWrapper		= $fullviewProjectDescrFull.find('div.thumbs-wrapper'),
-									$newFullviewThumbsWrapper	= $('<div class="thumbs-wrapper"><div class="thumbs">' + articleFullviewData.thumbs + '</div></div>');
+								$fullviewProjectDescrFull	= $fullview.find('div.project-descr-full'),
+								$fullviewThumbsWrapper		= $fullviewProjectDescrFull.find('div.thumbs-wrapper'),
+								$newFullviewThumbsWrapper	= $('<div class="thumbs-wrapper"><div class="thumbs">' + articleFullviewData.thumbs + '</div></div>');
 								// call loadmap with current index
 								// preload the article's background image
 								$loading.show();
@@ -719,19 +752,24 @@
 
 								$(window).bind('mousemove', function(event) {
 
-								    var posY = event.clientY;
-								    var windowH = $(window).height();
+									var posY = event.clientY;
+									var windowH = $(window).height();
 
-								    var midY = windowH / 2;
+									var midY = windowH / 2;
 
-								    var extraY = ($img.height() - windowH);
+									var extraY = ($img.height() - windowH);
 
-								    var perc = (Math.abs(posY) - midY ) / midY;
-								    var delta = perc * (extraY / 2);
+									var perc = (Math.abs(posY) - midY ) / midY;
+									var delta = perc * (extraY / 2);
 
 
-								    $img.css('top', currentTop - delta + 'px');
-										$(".imgmap").css('top', currentTop - delta + 'px');
+									$img.css('top', currentTop - delta + 'px');
+									$(".imgmap").css('top', currentTop - delta + 'px');
+								});
+								$('.circle').mouseover(function(){
+									$('#outfit').html($(this).data("outfit"));
+
+									// console.log($(this).data("outfit"));
 								});
 							},
 							//get dimentions of the image,
@@ -771,15 +809,15 @@
 								$("#circles"+index).show();
 							}
 
-						return {
-							init	: init
-						};
+							return {
+								init	: init
+							};
 
-					})()
+						})()
 
-				GridPortfolio.init();
+						GridPortfolio.init();
 
-			});
-		</script>
-	</body>
-</html>
+					});
+				</script>
+			</body>
+			</html>
